@@ -4,7 +4,7 @@ Organization has their data on AWS S3 Bucket and wants to move data to Azure via
 ## Issue:
 ADF connector “S3 Connector” works correctly connecting directly to AWS S3 Bucket, but when S3 applies policies to close communication to the VPC network it fails.
 
-[![Diagram](https://github.com/artmej/research/blob/main/aws-azure-s3-adf-vpn/images/image001.png "Diagram")](https://github.com/artmej/research/blob/main/aws-azure-s3-adf-vpn/images/image001.png "Diagram")
+[![Diagram](./images/image001.png "Diagram")]
 
 ## Lab building:
 - AWS S3: Created bucket for testing without any policy.
