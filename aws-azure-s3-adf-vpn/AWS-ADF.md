@@ -41,23 +41,29 @@ ADF connector “S3 Connector” works correctly connecting directly to AWS S3 B
 ## Workaround:
 Work around to make this work is based on these parts:
 1.Configure DNS with a couple of CNAMES: This step makes the magic it helps ADF/IR resolve the correct IP. In the process of connect to S3 the connector uses *.s3.amazonaws.com and also *.s3.<s3 region>.amazonaws.com. 
+ 
 ![Regions](./images/image002.png "Regions")
  
  Both registers will be redirected with a CNAME to our VPCE from AWS. 
+ 
  ![Region1](./images/image003.png "Region1")
  
  ![Region2](./images/image004.png "Region2")
-With this point the connector can resolve communication thru VPN to AWS.
+
+ With this point the connector can resolve communication thru VPN to AWS.
 
 2.Use Amazon S3 Compatible directly to your S3 bucket and use service url https://s3.BUCKET-REGION.amazonaws.com without bucket name.
+ 
 ![Connector](./images/image005.png "Connector")
  
 3. Last part is to configure your bucket and folder(s). In this case I am getting all files in folder “demo1” on my bucket “demoax”.
-![Bucket](./images/image006.png "Bucket")
+ 
+ ![Bucket](./images/image006.png "Bucket")
  
 ####Note:
  You won’t have a successful connection test or browse your folder. The reason is that you don’t have a bucket set up. If you want to test your connection, just add the bucket name in service.DO NOT FORGET TO REMOVE your bucket name. 
-![ConnVerify](./images/image007.png "ConnVerify")
+
+ ![ConnVerify](./images/image007.png "ConnVerify")
  
 ###### Some useful links:
  [When to use an AWS S3 VPC endpoint – Tom Gregory](https://tomgregory.com/when-to-use-an-aws-s3-vpc-endpoint/)
