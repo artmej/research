@@ -56,14 +56,16 @@ Work around to make this work is based on these parts:
  
 ![Connector](./images/image005.png "Connector")
  
+![Connector2](./images/image006.png "Connector2")
+ 
 3. Last part is to configure your bucket and folder(s). In this case I am getting all files in folder “demo1” on my bucket “demoax”.
  
- ![Bucket](./images/image006.png "Bucket")
+ ![Bucket](./images/image010.png "Bucket")
  
 ####Note:
  You won’t have a successful connection test or browse your folder. The reason is that you don’t have a bucket set up. If you want to test your connection, just add the bucket name in service.DO NOT FORGET TO REMOVE your bucket name. 
 
- ![ConnVerify](./images/image007.png "ConnVerify")
+ ![ConnVerify](./images/image012.png "ConnVerify")
  
 ###### Some useful links:
  [When to use an AWS S3 VPC endpoint – Tom Gregory](https://tomgregory.com/when-to-use-an-aws-s3-vpc-endpoint/)
