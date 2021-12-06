@@ -46,17 +46,17 @@ Work around to make this work is based on these parts:
  
  Both registers will be redirected with a CNAME to our VPCE from AWS. 
  
- ![Region1](./images/image003.png "Region1")
+ ![Regions](./images/image003.png "Regions")
  
- ![Region2](./images/image004.png "Region2")
+ ![Region1](./images/image004.png "Region1")
+ 
+ ![Region2](./images/image006.png "Region2")
 
  With this point the connector can resolve communication thru VPN to AWS.
 
 2.Use Amazon S3 Compatible directly to your S3 bucket and use service url https://s3.BUCKET-REGION.amazonaws.com without bucket name.
  
-![Connector](./images/image005.png "Connector")
- 
-![Connector2](./images/image006.png "Connector2")
+![Connector](./images/image008.png "Connector")
  
 3. Last part is to configure your bucket and folder(s). In this case I am getting all files in folder “demo1” on my bucket “demoax”.
  
